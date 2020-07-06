@@ -1,6 +1,6 @@
  
-<div style="height: 100vh;">
-  <mat-toolbar>
+<div style="height: 100vh; position: absolute;">
+  <mat-toolbar style="background-color: white; ">
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
@@ -46,25 +46,59 @@
       </mat-nav-list>
     </mat-sidenav>
 
-    
-    <mat-sidenav-content fxFlexFill>
-      
-      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
-        <mat-card *ngFor="let member of members" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
-          <mat-card-header>
+      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="background-color:#ffffff;  ">
+        <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z0">
+          <mat-card-header> 
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{member.title}}</mat-card-title>
-            <mat-card-subtitle>{{member.subtitle}}</mat-card-subtitle>
+            <mat-card-title style="font-size: 50px; font-family: 'Montserrat', sans-serif;">Create, Launch & Manage APIs
+               on cloud in minutes!</mat-card-title><br>
+            <mat-card-subtitle style="font-size: 25px; font-family: 'Montserrat', sans-serif;"><span style="color: orange;">apiplatform.io</span> is a cloud-agnostic <span style="color: orange;">no-code platform</span><br> that lets you build and launch APIs intelligently,<br>securely but instantly!</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image [src]="member.url" alt="Photo of {{member.title}}">
-          <mat-card-content>
+          <img mat-card-image [src]="">
+          <!-- <mat-card-content>
             <p>
               {{member.content}}
             </p>
-          </mat-card-content>
+          </mat-card-content> -->
         </mat-card>
-      </div> 
+        <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title></mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src='https://apiplatform.io/assets/img/home-top.png' >
+          <!-- <mat-card-content>
+            <p>
+              {{member.content}}
+            </p>
+          </mat-card-content> -->
+        </mat-card>
+      </div>
 
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+      <div fxLayout="row wrap" fxLayout.xs="column" style="background-color:#ffffff;" >
+        <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z0">
+
+          <h1 style="text-align: center;  font-family: 'Montserrat', sans-serif;">Why apiplatform.io</h1>
+
+        </mat-card>
+        </div>
+
+
+        <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="background-color:#ffffff;  ">
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" >
+            <mat-card-header> 
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title style="font-size: 50px; font-family: 'Montserrat', sans-serif;">Fully Automated ! </mat-card-title><br>
+              <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 2400X  </mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+
+        </div>
+
+
+
+
+      </mat-sidenav-container>
+
 </div>

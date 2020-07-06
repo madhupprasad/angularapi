@@ -2,6 +2,17 @@
   padding: 0 14px;
 }
 
+.mat-card {
+  border-style: none;
+  
+}
+
+mat-card img{
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 100%;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -9,6 +20,7 @@
 .text {
   font-size: 30px;
   margin-left: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .image {

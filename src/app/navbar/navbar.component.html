@@ -1,6 +1,6 @@
  
-<div style="height: 100vh; position: absolute;">
-  <mat-toolbar style="background-color: white; ">
+<div>
+  <mat-toolbar style="background-color: white; position: relative;">
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
@@ -55,11 +55,7 @@
             <mat-card-subtitle style="font-size: 25px; font-family: 'Montserrat', sans-serif;"><span style="color: orange;">apiplatform.io</span> is a cloud-agnostic <span style="color: orange;">no-code platform</span><br> that lets you build and launch APIs intelligently,<br>securely but instantly!</mat-card-subtitle>
           </mat-card-header>
           <img mat-card-image [src]="">
-          <!-- <mat-card-content>
-            <p>
-              {{member.content}}
-            </p>
-          </mat-card-content> -->
+
         </mat-card>
         <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0">
           <mat-card-header>
@@ -68,37 +64,59 @@
             <mat-card-subtitle></mat-card-subtitle>
           </mat-card-header>
           <img mat-card-image src='https://apiplatform.io/assets/img/home-top.png' >
-          <!-- <mat-card-content>
-            <p>
-              {{member.content}}
-            </p>
-          </mat-card-content> -->
+
         </mat-card>
       </div>
 
       <div fxLayout="row wrap" fxLayout.xs="column" style="background-color:#ffffff;" >
         <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z0">
 
-          <h1 style="text-align: center;  font-family: 'Montserrat', sans-serif;">Why apiplatform.io</h1>
+          <h1 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif;">Why apiplatform.io ?</h1>
 
         </mat-card>
         </div>
 
 
         <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="background-color:#ffffff;  ">
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" >
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)"  class="mat-elevation-z5" >
             <mat-card-header> 
               <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title style="font-size: 50px; font-family: 'Montserrat', sans-serif;">Fully Automated ! </mat-card-title><br>
+              <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Fully Automated ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 2400X  </mat-card-subtitle>
+              <mat-card-subtitle><mat-icon style="font-size: 70px; color:green">trending_up</mat-icon>
+                <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Improved Productivity  </mat-card-subtitle>
+
+              </mat-card-subtitle>
+
             </mat-card-header>
           </mat-card>
 
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5">
+            <mat-card-header> 
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Highly Configurable ! </mat-card-title><br>
+              <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 250X  </mat-card-subtitle>
+              <mat-card-subtitle><mat-icon  style="font-size: 70px; color: red;">trending_down</mat-icon></mat-card-subtitle>
+              <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Reduction in cost  </mat-card-subtitle>
+
+            </mat-card-header>
+          </mat-card>
+
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5">
+            <mat-card-header> 
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Developer Experience ! </mat-card-title><br>
+              <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 1 Minute  </mat-card-subtitle>
+              <mat-card-subtitle><mat-icon  style="font-size: 70px; color: orange;">alarm</mat-icon></mat-card-subtitle>
+              <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Design to public access  </mat-card-subtitle>
+
+            </mat-card-header>
+          </mat-card>
         </div>
 
+        <button mat-button (click)="openDialog()">Launch dialog</button>
 
-
-
+      
       </mat-sidenav-container>
 
 </div>

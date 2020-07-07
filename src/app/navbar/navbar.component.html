@@ -10,13 +10,25 @@
       <span class="example-spacer"></span>
       <div fxShow="true" fxHide.lt-md="true">
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+
+        <a href="#" mat-button>
+          <mat-icon>apps</mat-icon>
+          Products
+        </a>
+
+        <a href="#" mat-button>
+          <mat-icon>support</mat-icon>
+          Support
+        </a>
+
+        <a href="#" mat-button>
+          <mat-icon>phone</mat-icon>
+          Contact us
+        </a>
+
         <a href="#" mat-button>
           <mat-icon>attach_money</mat-icon>
           Pricing
-        </a>
-        <a href="#" mat-button>
-          <mat-icon>phone</mat-icon>
-          Contact
         </a>
         <a href="#" mat-button>
           <mat-icon>account_box</mat-icon>
@@ -29,6 +41,16 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
+        <a href="#" mat-list-item>
+          <mat-icon>apps</mat-icon>
+          Products
+        </a>
+
+        <a href="#" mat-list-item>
+          <mat-icon>support</mat-icon>
+          Support
+        </a>
+
         <a href="#" mat-list-item>
           <mat-icon>attach_money</mat-icon>
           Pricing
@@ -71,7 +93,7 @@
       <div fxLayout="row wrap" fxLayout.xs="column" style="background-color:#ffffff;" >
         <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z0">
 
-          <h1 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif;">Why apiplatform.io ?</h1>
+          <h1 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif;  margin-top: 200px;">Why apiplatform.io ?</h1>
 
         </mat-card>
         </div>
@@ -79,20 +101,19 @@
 
         <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="25px" style="background-color:#ffffff; padding-top: 25px; padding-left: 15px; padding-right: 15px;">
       
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)"  class="mat-elevation-z5" style="border-radius: 10px;"> 
-            <mat-card-header style="justify-content: center;"> 
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)"  class="mat-elevation-z2" style="border-radius: 10px;"> 
+            <mat-card-header style="justify-content: center; padding-top: 20px;"> 
               <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Fully Automated ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 2400X  </mat-card-subtitle>
-              <mat-card-subtitle><mat-icon style="font-size: 70px; color:green">trending_up</mat-icon>
-                <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Improved Productivity  </mat-card-subtitle>
+              <mat-card-subtitle><mat-icon style="font-size: 70px; color:green">trending_up</mat-icon></mat-card-subtitle>
+              <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Improved Productivity  </mat-card-subtitle>
 
-              </mat-card-subtitle>
 
             </mat-card-header>
           </mat-card>
 
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5" style="border-radius: 10px;">
-            <mat-card-header  style="justify-content: center;"> 
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="border-radius: 10px;">
+            <mat-card-header  style="justify-content: center; padding-top: 20px;"> 
               <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Highly Configurable ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 250X  </mat-card-subtitle>
               <mat-card-subtitle><mat-icon  style="font-size: 70px; color: red;">trending_down</mat-icon></mat-card-subtitle>
@@ -101,8 +122,8 @@
             </mat-card-header>
           </mat-card>
 
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5" style="border-radius: 10px;">
-            <mat-card-header  style="justify-content: center;"> 
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="border-radius: 10px;">
+            <mat-card-header  style="justify-content: center; padding-top: 20px;"> 
               <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Developer Experience ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 1 Minute  </mat-card-subtitle>
               <mat-card-subtitle><mat-icon  style="font-size: 70px; color: orange;">alarm</mat-icon></mat-card-subtitle>
@@ -112,15 +133,72 @@
           </mat-card>
         </div>
 
-        <h2 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif;">Too good to believe these numbers ?
-        </h2>
 
+
+        <h2 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif; margin-top: 200px;">Too good to believe these numbers ?
+        </h2>
 
         <h1 style="text-align: center;  font-family: 'Montserrat', sans-serif;">
         <button style="font-size: 20px; color:orange " mat-button (click)="openDialog()" mat-stroked-button>click here !</button>
        </h1>
 
-       <h1 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif; margin-top: 100px;">How it works ?</h1>
+       <h2 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif;  margin-top: 200px;">What do we ensure ?
+      </h2>
+
+
+
+       <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="25px" style="background-color:#ffffff; padding-top: 25px; padding-left: 15px; padding-right: 15px;">
+      
+        <mat-card fxFlex="calc(33%-250px)" fxFlex.sm="calc(100%-25px)"  class="mat-elevation-z2" style="border-radius: 10px;"> 
+          <mat-card-header style="justify-content: center; padding-top: 20px;"> 
+            <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Availabilty </mat-card-title><br>
+            <mat-card-subtitle style="color: forestgreen;font-size: 60px; font-family: 'Montserrat', sans-serif;"> 99.99%  </mat-card-subtitle>
+            <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Uptime  </mat-card-subtitle>
+
+
+          </mat-card-header>
+        </mat-card>
+
+        <mat-card fxFlex="calc(33%-250px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="border-radius: 10px;">
+          <mat-card-header  style="justify-content: center; padding-top: 20px;"> 
+            <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Quality </mat-card-title><br>
+            <mat-card-subtitle style="color: forestgreen; font-size: 60px; font-family: 'Montserrat', sans-serif;"> 0.25%  </mat-card-subtitle>
+            <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Server Error Rate</mat-card-subtitle>
+
+          </mat-card-header>
+        </mat-card>
+
+        <mat-card fxFlex="calc(33%-250px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="border-radius: 10px;">
+          <mat-card-header  style="justify-content: center; padding-top: 20px;"> 
+            <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Reliability </mat-card-title><br>
+            <mat-card-subtitle style="color: forestgreen;font-size: 60px; font-family: 'Montserrat', sans-serif;"> 99.99% </mat-card-subtitle>
+            <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Effective Pass Rate</mat-card-subtitle>
+
+          </mat-card-header>
+        </mat-card>
+
+        <mat-card fxFlex="calc(33%-250px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="border-radius: 10px;">
+          <mat-card-header  style="justify-content: center; padding-top: 20px;"> 
+            <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Perfomance </mat-card-title><br>
+            <mat-card-subtitle style="color: forestgreen;font-size: 60px; font-family: 'Montserrat', sans-serif;">300ms </mat-card-subtitle>
+            <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Total API Call Latency  </mat-card-subtitle>
+
+          </mat-card-header>
+        </mat-card>
+
+        <mat-card fxFlex="calc(33%-250px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="border-radius: 10px;">
+          <mat-card-header  style="justify-content: center; padding-top: 20px;"> 
+            <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Scalabilty </mat-card-title><br>
+            <mat-card-subtitle style="color: forestgreen;font-size: 60px; font-family: 'Montserrat', sans-serif;"> 2000 </mat-card-subtitle>
+            <mat-card-subtitle style="font-size: 30px; font-family: 'Montserrat', sans-serif;"> Transactions per second </mat-card-subtitle>
+
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+
+
+       <h1 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif; margin-top: 200px;">How it works ?</h1>
 
 
 
@@ -130,7 +208,7 @@
           </mat-card-title>
           <mat-card-subtitle></mat-card-subtitle>
         </mat-card-header>
-        <img class="image2" src='https://apiplatform.io/assets/img/generate.svg' style="width: 50%;">
+        <img class="image2" src='https://apiplatform.io/assets/img/generate.svg' style="width: 70%;">
       </mat-card>
 
       <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="background-color: #fafafa; padding-top: 30px;">
@@ -139,7 +217,7 @@
           </mat-card-title>
           <mat-card-subtitle></mat-card-subtitle>
         </mat-card-header>
-        <img class="image2" src='https://apiplatform.io/assets/img/deploy.svg' style="width: 50%;">
+        <img class="image2" src='https://apiplatform.io/assets/img/deploy.svg' style="width: 70%;">
       </mat-card>
 
       <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="padding-top: 30px;" >
@@ -148,7 +226,7 @@
           </mat-card-title>
           <mat-card-subtitle></mat-card-subtitle>
         </mat-card-header>
-        <img class="image2" src='https://apiplatform.io/assets/img/intelli.svg' style="width: 50%;"  >
+        <img class="image2" src='https://apiplatform.io/assets/img/intelli.svg' style="width: 70%;"  >
       </mat-card>
 
       <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="background-color: #fafafa; padding-top: 30px;  ">
@@ -157,18 +235,18 @@
           </mat-card-title>
           <mat-card-subtitle></mat-card-subtitle>
         </mat-card-header>
-        <img class="image2" src='https://apiplatform.io/assets/img/checkout-graphic.svg' style="width: 50%;">
+        <img class="image2" src='https://apiplatform.io/assets/img/checkout-graphic.svg' style="width: 70%;">
       </mat-card>
       
 
-  <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5" style="background-color: #212121;">
+  <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z2" style="background-color: #212121; margin-top: 200px;">
     
     <mat-card-header style="justify-content: center;"> 
       <span ><img src = "https://apiplatform.io/assets/logo/logo.svg" width = "40px"></span>
       <span class = "text" style="color: white;">apiplatform.io</span>
     </mat-card-header>
 
-    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="background-color:#212121;">
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="background-color:#212121; margin-top: 70px;">
       
       <mat-card style="background-color:inherit; color: white;" class="mat-elevation-z0" >
         <mat-card-header style="justify-content: center;">
@@ -308,7 +386,17 @@
 
         <mat-card-subtitle style="  ">
         <button class="button1"><b>Get Started</b></button>
-        <h4 class="_14">Follow us on</h4>
+          </mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card style="background-color:inherit; color: white;" class="mat-elevation-z0" >
+        <mat-card-header style="justify-content: center; ">
+        
+          <mat-card-title style="padding-left: 20px; color: orange;" >
+            Follow us on
+        </mat-card-title>
+
+        <mat-card-subtitle>
         <div class="footer-social-icons">
             <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
             <a href="" class="social-icon"> <i class="fa fa-rss"></i></a>
@@ -318,8 +406,10 @@
             <a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
       </div>
           </mat-card-subtitle>
-      </mat-card-header>
-       
+      </mat-card-header> 
+
+</mat-card>
+
       <mat-card-content>
         <a href="#" mat-button>
 

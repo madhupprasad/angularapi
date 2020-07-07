@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import {MatDialog} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-navbar',
@@ -10,17 +8,9 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class NavbarComponent{
 
-  constructor(public dialog: MatDialog) {};
+  constructor() {};
 
   title = 'madhu';
   
-  openDialog() {
-    this.dialog.open(DialogElementsExampleDialog);
-  }
 
 }
-@Component({
-  selector: 'dialog-elements-example-dialog',
-  templateUrl: 'dialog-elements-example-dialog.html',
-})
-export class DialogElementsExampleDialog {}

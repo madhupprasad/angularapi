@@ -15,12 +15,22 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
+import { IntroComponent } from './intro/intro.component';
+import { WhyComponent } from './why/why.component';
+import { WhatComponent } from './what/what.component';
+import { HowComponent } from './how/how.component';
+import { FootComponent } from './foot/foot.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    IntroComponent,
+    WhyComponent,
+    WhatComponent,
+    HowComponent,
+    FootComponent,
   ],
   imports: [
     BrowserModule,

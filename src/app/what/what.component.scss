@@ -1,0 +1,258 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .mat-card {
+    border-style: none;
+  }
+  
+  mat-card-image{
+    object-fit: cover; /*this makes the image in src fit to the size specified below*/
+    width: 90%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    height: 90%;
+  }
+  
+  .image2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  mat-card a{
+    color: white;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .text {
+    font-size: 30px;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .image {
+    margin-top: 9px;
+  }
+  
+  
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  
+  .button1 {
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  
+  
+  mat-card-title{
+  font-family:'Montserrat', sans-serif;
+  }
+  a{
+  font-family:'Montserrat', sans-serif;
+  }
+  
+  .footer-social-icons{
+    padding: 6px 6px 6px 6px;
+    color: white;
+  
+  }
+  
+  p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin:  1% 0 1% 0;
+  }
+  ._12 {
+    font-size: 1.2em;
+  }
+  ._14 {
+    font-size: 1.4em;
+    color: white;
+    margin-left: 20px;
+  }
+  ul {
+    padding:0;
+    list-style: none;
+  }
+  .footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+  }
+  .social-icon {
+    color: #fff;
+  }
+  ul.social-icons {
+    margin-top: 10px;
+  }
+  .social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+  }
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-facebook:hover {
+    background-color: #3d5b99;
+  }
+  .fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-twitter:hover {
+    background-color: #00aced;
+  }
+  .fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-rss:hover {
+    background-color: #eb8231;
+  }
+  .fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-youtube:hover {
+    background-color: #e64a41;
+  }
+  .fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-linkedin:hover {
+    background-color: #0073a4;
+  }
+  .fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-github:hover {
+    background-color: #5a32a3;
+  }
+  
+  
+  
+  
+  .button3 {
+    margin-top: 20px;
+    background-color: white; 
+    border: 2px solid red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 100px;
+    border-radius: 4px;
+    color: red;
+  }
+  
+  .t{
+    background-color: white; 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 100px;
+    border-radius: 4px;
+    color: Gray; 
+  }
+  
+  .button4 {
+    background-color: red;
+    border: None;
+    color: white;
+  
+  
+  }

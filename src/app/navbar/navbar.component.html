@@ -77,10 +77,10 @@
         </div>
 
 
-        <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="background-color:#ffffff;  ">
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)"  class="mat-elevation-z5" >
-            <mat-card-header> 
-              <div mat-card-avatar class="example-header-image"></div>
+        <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="25px" style="background-color:#ffffff; padding-top: 25px; padding-left: 15px; padding-right: 15px;">
+      
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)"  class="mat-elevation-z5" style="border-radius: 10px;"> 
+            <mat-card-header style="justify-content: center;"> 
               <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Fully Automated ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 2400X  </mat-card-subtitle>
               <mat-card-subtitle><mat-icon style="font-size: 70px; color:green">trending_up</mat-icon>
@@ -91,9 +91,8 @@
             </mat-card-header>
           </mat-card>
 
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5">
-            <mat-card-header> 
-              <div mat-card-avatar class="example-header-image"></div>
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5" style="border-radius: 10px;">
+            <mat-card-header  style="justify-content: center;"> 
               <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Highly Configurable ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 250X  </mat-card-subtitle>
               <mat-card-subtitle><mat-icon  style="font-size: 70px; color: red;">trending_down</mat-icon></mat-card-subtitle>
@@ -102,9 +101,8 @@
             </mat-card-header>
           </mat-card>
 
-          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5">
-            <mat-card-header> 
-              <div mat-card-avatar class="example-header-image"></div>
+          <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5" style="border-radius: 10px;">
+            <mat-card-header  style="justify-content: center;"> 
               <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Developer Experience ! </mat-card-title><br>
               <mat-card-subtitle style="font-size: 60px; font-family: 'Montserrat', sans-serif;"> 1 Minute  </mat-card-subtitle>
               <mat-card-subtitle><mat-icon  style="font-size: 70px; color: orange;">alarm</mat-icon></mat-card-subtitle>
@@ -114,9 +112,141 @@
           </mat-card>
         </div>
 
-        <button mat-button (click)="openDialog()">Launch dialog</button>
+        <h2 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif;">Too good to believe these numbers ?
+        </h2>
 
+
+        <h1 style="text-align: center;  font-family: 'Montserrat', sans-serif;">
+        <button style="font-size: 20px; color:orange " mat-button (click)="openDialog()" mat-stroked-button>click here !</button>
+       </h1>
+
+       <h1 style="font-size: 50px; text-align: center;  font-family: 'Montserrat', sans-serif; margin-top: 100px;">How it works ?</h1>
+
+
+
+       <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="padding-top: 30px; ">
+        <mat-card-header style="justify-content: center;" >
+          <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Generate and launch APIs instantly
+          </mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img class="image2" src='https://apiplatform.io/assets/img/generate.svg' style="width: 50%;">
+      </mat-card>
+
+      <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="background-color: #fafafa; padding-top: 30px;">
+        <mat-card-header style="justify-content: center;" >
+          <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Deploy API lightning fast
+          </mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img class="image2" src='https://apiplatform.io/assets/img/deploy.svg' style="width: 50%;">
+      </mat-card>
+
+      <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="padding-top: 30px;" >
+        <mat-card-header style="justify-content: center;" >
+          <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Self service API Management
+          </mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img class="image2" src='https://apiplatform.io/assets/img/intelli.svg' style="width: 50%;"  >
+      </mat-card>
+
+      <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" class="mat-elevation-z0" style="background-color: #fafafa; padding-top: 30px;  ">
+        <mat-card-header style="justify-content: center;" >
+          <mat-card-title style="font-size: 30px; font-family: 'Montserrat', sans-serif;">Intuitive Developer Experience
+          </mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img class="image2" src='https://apiplatform.io/assets/img/checkout-graphic.svg' style="width: 50%;">
+      </mat-card>
       
+<footer>
+
+
+  <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(100%-25px)" class="mat-elevation-z5" style="background-color: #212121  ;">
+    
+    <mat-card-header style="justify-content: center;"> 
+      <span ><img src = "https://apiplatform.io/assets/logo/logo.svg" width = "40px"></span>
+      <span class = "text" style="color: white;">apiplatform.io</span>
+    </mat-card-header>
+
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="height: 500px; ;background-color:#212121;">
+      
+      <mat-card>
+        <mat-card-header style="justify-content: center;">
+        
+          <mat-card-title style="padding-left: 20px;">
+           Company
+        </mat-card-title>
+
+        <mat-card-subtitle>
+
+          <a href="#" mat-button>
+            <mat-icon style="color: orange;">favorite</mat-icon>
+
+            About us
+          </a><br>
+          <a href="#" mat-button>
+            <mat-icon style="color: orange;">favorite</mat-icon>
+
+            Careers
+          </a><br>
+          <a href="#" mat-button>
+            <mat-icon style="color: orange;">favorite</mat-icon>
+
+            Privacy Policy
+          </a><br>
+          <a href="#" mat-button>
+            <mat-icon style="color: orange;">favorite</mat-icon>
+            Terms of Service
+          </a>
+          
+        </mat-card-subtitle>
+      </mat-card-header>
+       
+      </mat-card>
+
+      <mat-card>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>          
+      </mat-card>
+
+      <mat-card>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>          
+      </mat-card>
+
+      <mat-card>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>          
+      </mat-card>
+
+      <mat-card>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>          
+      </mat-card>
+
+      </div>
+
+  </mat-card>
+
+
+</footer>
+
       </mat-sidenav-container>
+
+
 
 </div>
